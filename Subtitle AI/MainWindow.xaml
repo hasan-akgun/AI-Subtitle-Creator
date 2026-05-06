@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Button x:Name="BtnUploadFile" Content="Upload" HorizontalAlignment="Left" Margin="106,64,0,0" VerticalAlignment="Top" Height="29" Width="61" Command="{Binding ChooseFileCommand}"/>
+        <TextBlock x:Name="TxtFilePath" HorizontalAlignment="Left" Margin="187,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="{Binding FilePath}" Width="213" Height="55"/>
 
     </Grid>
 </Window>

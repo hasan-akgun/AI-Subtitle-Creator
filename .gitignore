@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Subtitle AI/ffmpeg/ffmpeg.exe
+/Subtitle AI/ffmpeg/ffprobe.exe

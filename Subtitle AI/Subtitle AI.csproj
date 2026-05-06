@@ -11,9 +11,18 @@
 
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="ffmpeg\" />
-    <Folder Include="ViewModels\" />
     <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LLamaSharp" Version="0.27.0" />
+    <PackageReference Include="LLamaSharp.Backend.Cpu" Version="0.27.0" />
+    <PackageReference Include="LLamaSharp.Backend.Cuda12" Version="0.27.0" />
+    <PackageReference Include="SubtitlesParserV2" Version="2.4.0" />
+    <PackageReference Include="Whisper.net" Version="1.9.0" />
+    <PackageReference Include="Whisper.net.Runtime" Version="1.9.0" />
+    <PackageReference Include="Whisper.net.Runtime.Cublas" Version="1.5.0" />
+    <PackageReference Include="Xabe.FFmpeg" Version="6.0.2" />
   </ItemGroup>
 
 </Project>

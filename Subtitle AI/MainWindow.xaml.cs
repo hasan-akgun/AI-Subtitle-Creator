@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using Subtitle_AI.ViewModels;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,6 +20,7 @@ namespace Subtitle_AI
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new MainView();
         }
     }
 }
