@@ -16,6 +16,11 @@ namespace Subtitle_AI.ViewModels
                 OnPropertyChanged();
             } 
         }
+        public List<string> TargetLanguages { get; } = new List<string> { "Turkish", "English", "German", "Spanish" };
+        private string transFrom = "English";
+        public string TransFrom { get { return transFrom; } set {  transFrom = value; OnPropertyChanged();  }   }
+        private string transTo = "Turkish";
+        public string TransTo { get { return transTo; } set { transTo = value; OnPropertyChanged(); } }
         public ICommand ChooseFileCommand { get; }
 
         public MainView()

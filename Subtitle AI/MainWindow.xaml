@@ -9,6 +9,10 @@
     <Grid>
         <Button x:Name="BtnUploadFile" Content="Upload" HorizontalAlignment="Left" Margin="106,64,0,0" VerticalAlignment="Top" Height="29" Width="61" Command="{Binding ChooseFileCommand}"/>
         <TextBlock x:Name="TxtFilePath" HorizontalAlignment="Left" Margin="187,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="{Binding FilePath}" Width="213" Height="55"/>
+        <ComboBox x:Name="CmbBoxTranslateFrom" HorizontalAlignment="Left" Margin="92,183,0,0" VerticalAlignment="Top" Width="185" ItemsSource="{Binding TargetLanguages}" SelectedItem="{Binding TransFrom}">
+        </ComboBox>
+        <ComboBox x:Name="CmbBoxTranslateTo" HorizontalAlignment="Left" Margin="377,183,0,0" VerticalAlignment="Top" Width="185" ItemsSource="{Binding TargetLanguages}" SelectedItem="{Binding TransTo}">
+         </ComboBox>
 
     </Grid>
 </Window>
